@@ -31,7 +31,7 @@ if($_POST['submit']){
 			$_SESSION['id'] = $user->id;
 		
 			#moves to the users page
-			header('Location: include/user.php');
+			header('Location: user.php');
 		}else{
 			echo 'incorrect password';
 		}
