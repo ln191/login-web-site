@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
-require 'functions.php';
-include_once("connection.php");
+require 'include/functions.php';
+include_once("include/connection.php");
 #Runs when user press log in button
 if($_POST['submit']){
 	
@@ -31,7 +31,7 @@ if($_POST['submit']){
 			$_SESSION['id'] = $user->id;
 		
 			#moves to the users page
-			header('Location: user.php');
+			header('Location: include/user.php');
 		}else{
 			echo 'incorrect password';
 		}

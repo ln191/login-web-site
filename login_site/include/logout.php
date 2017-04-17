@@ -14,7 +14,7 @@ session_destroy();
 
 <body>
 
-	<a href="index.php">Click here to return to login page. </a>
+	<a href="../index.php">Click here to return to login page. </a>
 	
 </body>
 

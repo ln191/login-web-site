@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
-require 'functions.php';
-include_once("connection.php");
+require 'include/functions.php';
+include_once("include/connection.php");
 if($_POST['submit']){
 	
 		$username = encoding($_POST['username']);
